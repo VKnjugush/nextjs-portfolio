@@ -1,0 +1,44 @@
+/* styles/About.module.css */
+.aboutSection {
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.aboutSection h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0070f3;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.aboutSection h2 {
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.aboutSection p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillsList li {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,92 @@
+/* styles/Contact.module.css */
+.contactSection {
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.contactSection h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.contactSection > p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contactMethods {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contactMethods {
+    grid-template-columns: 1fr 1.5fr; /* Info on left, form on right */
+  }
+}
+
+.contactInfo h2, .contactForm h2 {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+.contactInfo p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.contactInfo a {
+  color: #0070f3;
+}
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+
+.contactForm div {
+  margin-bottom: 1rem;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm button {
+  background-color: #0070f3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+  background-color: #005bb5;
+}

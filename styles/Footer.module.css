@@ -1,0 +1,8 @@
+/* styles/Footer.module.css */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* Pushes footer to bottom if content is short */
+}

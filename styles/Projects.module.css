@@ -1,0 +1,85 @@
+/* styles/Projects.module.css */
+.projectsSection {
+  padding: 2rem 0;
+}
+
+.projectsSection h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.projectsSection > p { /* Target direct p child for intro text */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Important for image fitting */
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImageContainer {
+  width: 100%;
+  /* If using layout="responsive" with specific aspect ratio,
+     you might not need a fixed height here, but ensure parent has width.
+     If using layout="fill", parent needs position:relative and width/height.
+  */
+  aspect-ratio: 16 / 10; /* Example aspect ratio */
+  position: relative; /* Needed if image uses layout="fill" */
+}
+
+/* Next/Image with layout="responsive" will fill width and maintain aspect ratio.
+   With layout="fill", it will fill the .projectImageContainer dimensions.
+   Make sure your image dimensions in the component (width/height props)
+   match the actual image aspect ratio for best results with layout="responsive".
+*/
+
+.projectCard h3 {
+  font-size: 1.5rem;
+  margin: 1rem 1.5rem 0.5rem;
+  color: #333;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 1.5rem 1rem;
+  color: #666;
+  flex-grow: 1; /* Pushes links to the bottom */
+}
+
+.projectLinks {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLink {
+  background-color: #0070f3;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.projectLink:hover {
+  background-color: #005bb5;
+  text-decoration: none;
+}
